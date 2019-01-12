@@ -87,7 +87,7 @@ pip install gunicorn pymysql
 
 ##### Setup the environmental variables
 
-Find the .flaskenvexample file and change the lines with your details:
+Copy the .flaskenvexample to .flaskenv  and change the lines with your own details:
 
 ```
 LC_ALL= en_US.UTF-8
