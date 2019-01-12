@@ -8,7 +8,7 @@ from config import Config
 
 class TestConfig(Config):
     TESTING = True
-    SQLALCHEMY_DATABASE_URI = 'sqlite://'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://user:password@x.x.x.x/msc102_tests'
 
 
 class UserModelCase(unittest.TestCase):
