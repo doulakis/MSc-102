@@ -1,0 +1,21 @@
+    <table class="table table-hover">
+        <tr>
+            <td width="70px">
+                <a href="{{ url_for('main.user', username=bookmark.author.username) }}">
+                    <img src="{{ bookmark.author.avatar(70) }}" />
+                </a>
+            </td>
+            <td>
+                <a href="{{ url_for('main.user', username=bookmark.author.username) }}">
+                    {{ bookmark.author.username }}
+                </a>
+                Added a Bookmark {{ moment(bookmark.timestamp).fromNow() }}:
+                <br>
+                {{ bookmark.title }}
+                <br>
+                <a href="{{ bookmark.url }}">
+                    {{ bookmark.url }}
+                </a>
+            </td>
+        </tr>
+    </table>

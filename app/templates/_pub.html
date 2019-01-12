@@ -1,0 +1,50 @@
+ <tbody>
+        <tr>
+            <td>
+                 {{ count.a }}
+            </td>
+            <td width="1000px">
+                <a href="{{ publication["info"]["url"] }}">
+                {{ publication["info"]["title"] }}
+                </a>
+            </td>
+
+            <td>
+                {{ publication["info"]["year"] }}
+                <br>
+            </td>
+            <p>
+            <td>
+
+                {% if "authors" in publication["info"] and publication["info"]["authors"]["author"] is not string %}
+                    <a href="#{{ publication["@id"] }}" class="btn btn-info" data-toggle="collapse">Show Authors</a>
+                        <div id={{ publication["@id"] }} class="collapse">
+                            <ul class="list-group">
+                            {% for a in publication["info"]["authors"]["author"] %}
+                                {{ a }}
+                            {% endfor %}
+                            </ul>
+                        </div>
+                {% elif "authors" in publication["info"] and (publication["info"]["authors"]["author"]) is string %}
+                    <a href="#{{ publication["@id"] }}" class="btn btn-info" data-toggle="collapse">Show Authors</a>
+                        <div id={{ publication["@id"] }} class="collapse">
+                            <ul class="list-group">
+                                {{ publication["info"]["authors"]["author"] }}
+                            </ul>
+                        </div>
+                {% else %}
+                    N/A
+                {% endif %}
+                <br>
+            </td>
+            <td>
+                {% set myquery = form.q.data %}
+                <form class="" method="post" action="{{ url_for('main.save_bookmark', q=myquery, title=publication["info"]["title"], url=publication["info"]["url"]) }}">
+                    <button type="submit">
+                    <span class="glyphicon glyphicon-bookmark" aria-hidden="true" data-toggle="tooltip" title="Click to save it as Bookmark"</span>
+                </button>
+                </form>
+                <br>
+            </td>
+        </tr>
+    </tbody>

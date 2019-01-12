@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h4>Publication Search</h4>
+    {% if form %}
+        <form class="" method="get" action="{{ url_for('main.search_pub') }}">
+        <div class="form-group">
+            {{ form.q(size=20, class='form-control',placeholder=form.q.label.text) }}
+        <div/>
+        </form>
+    <br>
+    {% endif %}
+    <h4> You Searched for "<strong><i>{{ form.q.data }}</i></strong>"</h4>
+    <br>
+    <table class="table table-responsive">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Year</th>
+                <th scope="col">Author(s)</th>
+            </tr>
+        </thead>
+    {% set count = namespace(a=0) %}
+    {%  if publications %}
+        {% for publication in publications %}
+            {% set count.a = count.a + 1 %}
+            {% include '_pub.html' %}
+        {% endfor %}
+    {% endif %}
+{% endblock %}
