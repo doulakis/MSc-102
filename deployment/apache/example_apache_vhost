@@ -1,0 +1,30 @@
+<VirtualHost *:80>
+    ServerName app.domain.com
+    Redirect permanent / https://app.domain.com
+</VirtualHost>
+
+<VirtualHost *:443>
+     ServerName app.domain.com
+
+     SSLEngine On
+     SSLProxyEngine On
+     SSLCertificateFile cert.pem
+     SSLCertificateKeyFile privkey.pem
+     Include /etc/letsencrypt/options-ssl-apache.conf
+     SSLCertificateChainFile chain.pem
+     ErrorLog /var/log/httpd/msc102/msc102-error.log
+     LogLevel warn
+     CustomLog /var/log/httpd/msc102/msc102-access.log combined
+
+    <Proxy *>
+        Order deny,allow
+        Allow from all
+    </Proxy>
+
+    ProxyRequests Off
+    ProxyPreserveHost on
+    ProxyPass / http://localhost:8080/ connectiontimeout=5 timeout=300
+    ProxyPassReverse / http://localhost:8080/
+
+    Header always set Strict-Transport-Security "max-age=15768000"
+</VirtualHost>
