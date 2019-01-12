@@ -67,9 +67,9 @@ You should register to use the application (for password reset please check the 
 ##### Server Preparation
 
 ````
-$ sudo yum update -y update
-$ sudo yum install -y install python3 python3-venv python3-dev
-$ sudo yum install -y install mysql-server postfix supervisor httpd git
+$ sudo yum update
+$ sudo yum install -y  python3 python3-venv python3-dev
+$ sudo yum install -y  mysql-server postfix supervisor httpd git
 ````
 
 ##### Clone the project
