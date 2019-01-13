@@ -1,6 +1,14 @@
 # Welcome to the MSc-102 Project!
 
+### General Info
 This project is not a complete project and should not considered as a professional work by viewers of this profile.
+Also this document should considered by the professors the documentation of the final assesment that should not exceed 3000 words.
+
+
+### Project URL (public access):
+
+https://app.doulakis.com
+You should register to use the application (for password reset please check the spam folder)
 
 ### For Project Management Details please refer to the wiki page here: 
 https://github.com/doulakis/MSc-102/wiki or read the details above
@@ -53,15 +61,6 @@ You can find under this issue the estimation of each issue and worklogs.
 * Thomas Agorastoudis (Backend Developer)
 * Haris Sarchosis (Frontend Developer)
 * Nikolaos Martikas (Tester, Frontend Developer)
-
-### Project URL (public access):
-
-https://app.doulakis.com
-You should register to use the application (for password reset please check the spam folder)
-
-
-### Project Structure
-
 
 
 ### Linux Deployment (CentOS 7)
