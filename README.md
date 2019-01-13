@@ -83,8 +83,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 pip install gunicorn pymysql
 
-*For Windows users, run CMD with ADMIN rights first.
-activate from Scripts directory Scripts\ativate
+* For Windows users, run CMD with ADMIN rights first.
+  activate from Scripts directory Scripts\activate
 
 `````
 
