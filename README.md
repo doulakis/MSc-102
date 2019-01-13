@@ -182,7 +182,7 @@ Ran 4 tests in 0.613s
 ````
  #### Database Schema
 
-![alt text](https://lh3.googleusercontent.com/crkSMCrcdewvqCxbXsAu6qvAoAurGJ_vxLQPNJGFkgCyziwfPm1TPcZBQqkOGTBSeoDvBEC0WPj99Q-5dyCN=w2860-h1842)
+![alt text](https://i.imgur.com/6Iscu5M.png)
 
 
 ## Technologies & Services
@@ -251,7 +251,7 @@ All the configuration of the server is manual.
 
 #### SSL Report by SSL Labs
 
-![alt text](https://lh6.googleusercontent.com/ht8DSNYEyHDmzz-En3rVQPEZMgAErotTzUKo0Dav7RL4Qh57cHdh9sIK615rTsa3_ifrsIiySuSw2T62byOQ=w3230-h1432-rw)
+![alt text](https://i.imgur.com/1oFc1Qf.png)
 
 [Click here to Run the report and get the results live](https://ssllabs.com/ssltest/analyze.html?d=app.doulakis.com&latest)
 
