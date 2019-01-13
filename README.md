@@ -1,5 +1,7 @@
 # Welcome to the MSc-102 Project!
 
+This project is not a complete project and should not considered as a professional work by viewers of this profile.
+
 ### For Project Management Details please refer to the wiki page here: 
 https://github.com/doulakis/MSc-102/wiki or read the details above
 
@@ -184,19 +186,34 @@ Ran 4 tests in 0.613s
 ![alt text](https://lh3.googleusercontent.com/crkSMCrcdewvqCxbXsAu6qvAoAurGJ_vxLQPNJGFkgCyziwfPm1TPcZBQqkOGTBSeoDvBEC0WPj99Q-5dyCN=w2860-h1842)
 
 
-### Packages
+## Technologies & Services
+
+
+### Short Description of Packages (Check requirements.txt for full list)
 
 - Flask
+    Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions.
+    
 
 - Flask-Bootstrap
 
+    Flask-Bootstrap packages Bootstrap into an extension that mostly consists of a blueprint named ‘bootstrap’. It can also create links to serve Bootstrap from a CDN.
+
 - Flask-Login
 
+    Flask-Login provides user session management for Flask. It handles the common tasks of logging in, logging out, and remembering your users’ sessions over extended periods of time.
+
 - Flask-Mail
+    
+    The Flask-Mail extension provides a simple interface to set up SMTP with your Flask application and to send messages from your views and scripts.
 
 - Flask-Migrate
 
+    Flask-Migrate is an extension that handles SQLAlchemy database migrations for Flask applications using Alembic. The database operations are made available through the Flask command-line interface or through the Flask-Script extension.
+
 - Flask-Moment
+    
+    Formatting of dates and times in Flask templates using moment.js.
 
 - Flask-SQLAlchemy [More Details](http://flask-sqlalchemy.pocoo.org/2.3/)
     
@@ -211,28 +228,41 @@ Ran 4 tests in 0.613s
     
 
 - Werkzeug
+    
+    Werkzeug started as a simple collection of various utilities for WSGI applications and has become one of the most advanced WSGI utility modules. It includes a powerful debugger, fully featured request and response objects, HTTP utilities to handle entity tags, cache control headers, HTTP dates, cookie handling, file uploads, a powerful URL routing system and a bunch of community contributed addon modules.
+    It does Unicode and doesn't enforce a specific template engine, database adapter or anything else. It doesn't even enforce a specific way of handling requests and leaves all that up to the developer.
 
 - Jinja2
+    
+    Jinja2 is a templating engine for Python.
 
 - gunicorn
 
+    Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX. It's a pre-fork worker model. The Gunicorn server is broadly compatible with various web frameworks, simply implemented, light on server resources, and fairly speedy.
+
 
 #### Email Service
-
-sendgrid
+    
+We used sendgrid free tier for email provider, we verified the domain in order to have DKIM and SPF records to avoid blacklist of our domain.
 
 #### Hosting
-
-#### Domain Name
+The app is hosted in Digital Ocean Droplet free of charge. We use the GitHub Education package to redeem the available credits.
+All the configuration of the server is manual.
 
 #### SSL Report by SSL Labs
 
 ![alt text](https://lh6.googleusercontent.com/ht8DSNYEyHDmzz-En3rVQPEZMgAErotTzUKo0Dav7RL4Qh57cHdh9sIK615rTsa3_ifrsIiySuSw2T62byOQ=w3230-h1432-rw)
 
 [Click here to Run the report and get the results live]
+
 #### Let's Encrypt
+The Domain is verified under Let's Encrypt which is a free, automated, and open certificate authority.
 
 #### Gravatar API
+An "avatar" is an image that represents you online—a little picture that appears next to your name when you interact with websites.
+A Gravatar is a Globally Recognized Avatar. You upload it and create your profile just once, and then when you participate in any Gravatar-enabled site, your Gravatar image will automatically follow you there.
+Gravatar is a free service for site owners, developers, and users. It is automatically included in every WordPress.com account and is run and supported by Automattic.
+
 
 
 
