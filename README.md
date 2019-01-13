@@ -82,6 +82,10 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 pip install gunicorn pymysql
+
+*For Windows users, run CMD with ADMIN rights first.
+activate from Scripts directory Scripts\ativate
+
 `````
 
 
