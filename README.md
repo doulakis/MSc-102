@@ -144,7 +144,7 @@ run the command and confirm that the app is running on localhost port: 8080
 
 use the config ./deployment/supervisord/app.ini
 
-coppy the file into /et/supervisor.d/
+coppy the file into /etc/supervisor.d/
 
 restart the service:
 
