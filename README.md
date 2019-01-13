@@ -178,8 +178,10 @@ test_password_hashing (__main__.UserModelCase) ... ok
 ----------------------------------------------------------------------
 Ran 4 tests in 0.613s
 
-OK
-
 ````
+ ##### Databse Schema
+
+
+![alt text](https://drive.google.com/open?id=1m9AiJVbO_jlnbtGSgsf6vvtHV50BSOXP)
 
 
