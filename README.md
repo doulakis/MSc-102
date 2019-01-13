@@ -179,9 +179,66 @@ test_password_hashing (__main__.UserModelCase) ... ok
 Ran 4 tests in 0.613s
 
 ````
- ##### Databse Schema
-
+ #### Database Schema
 
 ![alt text](https://lh3.googleusercontent.com/crkSMCrcdewvqCxbXsAu6qvAoAurGJ_vxLQPNJGFkgCyziwfPm1TPcZBQqkOGTBSeoDvBEC0WPj99Q-5dyCN=w2860-h1842)
+
+
+### Packages
+
+- Flask
+
+- Flask-Bootstrap
+
+- Flask-Login
+
+- Flask-Mail
+
+- Flask-Migrate
+
+- Flask-Moment
+
+- Flask-SQLAlchemy [More Details](http://flask-sqlalchemy.pocoo.org/2.3/)
+    
+    Flask SQLAlchemy is a Flask extension in order to support SQLAlechemy.
+    SQLAlchemy is an Object Relational Mapper. You can use MySQL, PostgreSQL and other DBs. 
+    For more details please click [here](https://docs.sqlalchemy.org/en/latest/)
+
+
+- Flask-WTF & WTForms [More Details](https://wtforms.readthedocs.io/en/stable/) 
+
+    Forms provide the highest level API in WTForms. They contain your field definitions, delegate validation, take input, aggregate errors, and in general function as the glue holding everything together.
+    
+
+- Werkzeug
+
+- Jinja2
+
+- gunicorn
+
+
+#### Email Service
+
+sendgrid
+
+#### Hosting
+
+#### Domain Name
+
+#### SSL Report by SSL Labs
+
+![alt text](https://lh6.googleusercontent.com/ht8DSNYEyHDmzz-En3rVQPEZMgAErotTzUKo0Dav7RL4Qh57cHdh9sIK615rTsa3_ifrsIiySuSw2T62byOQ=w3230-h1432-rw)
+
+[Click here to Run the report and get the results live]
+#### Let's Encrypt
+
+#### Gravatar API
+
+
+
+
+
+
+
 
 
