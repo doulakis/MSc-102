@@ -192,6 +192,7 @@ Ran 4 tests in 0.613s
 ### Short Description of Packages (Check requirements.txt for full list)
 
 - Flask
+
     Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions.
     
 
@@ -253,7 +254,7 @@ All the configuration of the server is manual.
 
 ![alt text](https://lh6.googleusercontent.com/ht8DSNYEyHDmzz-En3rVQPEZMgAErotTzUKo0Dav7RL4Qh57cHdh9sIK615rTsa3_ifrsIiySuSw2T62byOQ=w3230-h1432-rw)
 
-[Click here to Run the report and get the results live]
+[Click here to Run the report and get the results live](ssllabs.com/ssltest/analyze.html?d=app.doulakis.com&latest)
 
 #### Let's Encrypt
 The Domain is verified under Let's Encrypt which is a free, automated, and open certificate authority.
